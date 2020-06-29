@@ -1,5 +1,26 @@
 # Structured documents
 
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Structured documents](#structured-documents)
+  - [This is a second-tier heading](#this-is-a-second-tier-heading)
+  - [Text Example](#text-example)
+  - [List Example](#list-example)
+  - [Table Example](#table-example)
+  - [Image Example](#image-example)
+  - [Code Example](#code-example)
+  - [Task Lists Example](#task-lists-example)
+  - [PlantUML Example](#plantuml-example)
+  - [Mermaid Example](#mermaid-example)
+  - [Flowchart Example](#flowchart-example)
+  - [More Enhanced Features](#more-enhanced-features)
+
+<!-- /code_chunk_output -->
+
+
 Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes.
 
 ## This is a second-tier heading
@@ -100,3 +121,40 @@ return
 
 @enduml
 ```
+
+## Mermaid Example
+
+```mermaid
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+```
+
+## Flowchart Example
+
+```flow
+st=>start: Start:>http://www.google.com[blank]
+e=>end:>http://www.google.com
+op1=>operation: My Operation
+sub1=>subroutine: My Subroutine
+cond=>condition: Yes
+or No?:>http://www.google.com
+io=>inputoutput: catch something...
+para=>parallel: parallel tasks
+
+st->op1->cond
+cond(yes)->io->e
+cond(no)->para
+para(path1, bottom)->sub1(right)->op1
+para(path2, top)->op1
+```
+
+## More Enhanced Features
+
+Refer https://shd101wyy.github.io/markdown-preview-enhanced/#/
